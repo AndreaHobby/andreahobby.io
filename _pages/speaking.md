@@ -11,6 +11,7 @@ toc_icon: cog
 # SPEAKER TOPICS
 - COVID19 and Health Disparities
 - Careers in Data Science
+- Foundations of Public Health & Data Science 
 
 # PAST SPEAKING
 # ENGAGEMENTS
