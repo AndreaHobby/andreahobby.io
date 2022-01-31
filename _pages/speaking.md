@@ -13,8 +13,7 @@ toc_icon: cog
 - Careers in Data Science
 - Foundations of Public Health & Data Science 
 
-# PAST SPEAKING
-# ENGAGEMENTS
+# PAST SPEAKING ENGAGEMENTS
 
 ![image tooltip here](/images/blkindata.webp)
 
