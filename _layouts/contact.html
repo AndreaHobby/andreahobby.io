@@ -6,16 +6,16 @@ layout: archive
 {% assign author = page.author | default: page.authors[0] | default: site.author %}
 {% assign author = site.data.authors[author] | default: author %}
 {% if author.email %}
-<li>
+
 	<a href="mailto:{{ author.email }}">
 		<meta itemprop="email" content="{{ author.email }}" />
 		<i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span>
 	</a>
-</li>
+
 {% endif %}
 
-<li>
+
 	<a href="https://twitter.com/ahobby9" itemprop="sameAs" rel="nofollow noopener noreferrer">
 		<i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
 	</a>
-</li>
+
