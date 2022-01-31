@@ -7,33 +7,28 @@ toc: true
 toc_icon: cog
 ---
 
-![image tooltip here](/images/1621764685815.jpg)
-
-Hello, my name is Cyrille. I am a bioengineering student at Yildiz Technical University in Istanbul, Turkey. As an aspiring bioengineer, I aim to utilize machine learning, deep learning and bioinformatics to make a positive impact in global healthcare. I'm also interested in the applications of computational and systems biology approaches in understanding the pathophysiology of cancer.  
-
-I am a self-taught datascientist, bioinformatician and systems biologist, and I intend to use my knowledge in these fields and apply them in medical image analysis for diagnostic purposes, and in cancer drug design for targeted therapies. I enjoy gathering, organizing and analyzing information, working in groups and contributing to project strategies.       
-
-## Vision  
-* To be part of new breakthroughs in medical diagnosis, prognosis and companion diagnosis, as well as advancements in biomedical research. 
-* To be part of great Innovation in biomedical technologies.  
-* To contribute to the making of a healthier world.    
-   
-## Hobbies  
-During my free time, I read books, watch movies, listen to music, sing, hangout with friends or do a combination of both. However, my favourite hobby is singing, as singing helps me release my stress and to be more productive.  
-
-## Most Recent Activities   
-
-![image tooltip here](/images/post2.jpeg)
-
-We recently participated in an international competition known as Teknofest AI for Healthcare. We went by the team name AI KNIGHTS, a two man team with [Beltus Nkwawir](https://www.linkedin.com/in/beltus/) as the team leader.   
-
-![image tooltip here](/images/post3_2.jpeg)
-
-This competition was very competitive because 229 teams registered and there were three elimination phases. However, our team made it to the finals and was ranked number 16 out of 53 teams that made it to the finals. To learn more about the project , click [here](https://cyrillemesue.github.io/Projects/).   
-
-![image tooltip here](/images/post1.jpeg)
+![image tooltip here](/images/hoyaahobby_edited.webp)
 
 
+Hello, a bit about me:
+
+
+Andrea Hobby has over ten years of combined experience in clinical research, epidemiology, and data science. She builds data visualizations & dashboards, designs research studies, and  builds predictive models in Tableau, R, SAS, and Python.
+
+## My work
+
+##### DATA VISUALIZATION
+COVID-19, Race, and Hospital Beds in United States in Tableau
+
+##### PUBLICATIONS
+Edwards TC, Patrick DL, Skalicky AM, Huang Y, Hobby AD (2011) Perceived body shape, standardized body-mass index, and weight-specific quality of life of African-American, Caucasian, and Mexican-American adolescents. Qual Life Res.
+
+Morales, L. S., Flores, Y., Hobby, A., Edwards, T. C., Patrick, D. L., Salmeron, J., & Skalicky, A. M. (2010, October). Weight and Quality of Life of Youth in Mexico and the United States: A Comparative Study. In QUALITY OF LIFE RESEARCH (Vol. 19, pp. 39-39).
+
+##### ADDITIONAL CONTRIBUTIONS
+Feldman AG, Sundaram SS, Beaty BL, Torres R, Curtis DJ, Kempe A. Immunization Status at the Time of Liver Transplant in Children and Adolescents. JAMA. 2019;322(18):1822–1824. doi:10.1001/jAMA.2019.14386
+
+[My Skills](https://github.com/andreahobby)
 
 
 

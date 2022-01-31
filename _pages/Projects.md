@@ -1,22 +1,20 @@
 ---
 layout: single
-title: My Portfolio
-permalink: /Projects/
+title: My Projects
+permalink: /projects/
 author_profile: true
 comments: true
 toc: true
 toc_icon: cog
 ---
-Below are some of my most recent projects.    
 
-## Project 01 | Teknofest AI in Healthcare Competition  
-MARCH 2021- SEPTEMBER 2021  
+##### DATA VISUALIZATION
+COVID-19, Race, and Hospital Beds in United States in Tableau
 
-![image tooltip here](/images/project01.jpg)
+##### PUBLICATIONS
+Edwards TC, Patrick DL, Skalicky AM, Huang Y, Hobby AD (2011) Perceived body shape, standardized body-mass index, and weight-specific quality of life of African-American, Caucasian, and Mexican-American adolescents. Qual Life Res.
 
-This project was part of the teknofest artificial intelligence (AI) for healthcare 2021 competition. And I worked under the two man team, AI KNIGHTS, with [Beltus Nkwawir](https://www.linkedin.com/in/beltus/), a computer science master's student at Istanbul Technical University, as the team leader. 
+Morales, L. S., Flores, Y., Hobby, A., Edwards, T. C., Patrick, D. L., Salmeron, J., & Skalicky, A. M. (2010, October). Weight and Quality of Life of Youth in Mexico and the United States: A Comparative Study. In QUALITY OF LIFE RESEARCH (Vol. 19, pp. 39-39).
 
-In this project, the task was to create a deep learning model that can identify areas of the brain that show signs of stroke; ischemic or hemorrhagic strokes, in brain CT  images. We built both a classification model to tell if an image has stroke or not, and, a segmentation model to mark pixels in the brain CT scan where the stroke is found. 
-
-We used transfer learning and ensemble max voting methods to perform both the classification and segmentation tasks, and, our team was ranked number 16 out of 53 teams that got to the final stage of the competition and 229 teams that registered.  
-
+##### ADDITIONAL CONTRIBUTIONS
+Feldman AG, Sundaram SS, Beaty BL, Torres R, Curtis DJ, Kempe A. Immunization Status at the Time of Liver Transplant in Children and Adolescents. JAMA. 2019;322(18):1822–1824. doi:10.1001/jAMA.2019.14386
