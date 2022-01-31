@@ -12,7 +12,7 @@ gem "jekyll", github: "jekyll/jekyll"
 gem "liquid-c"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minimal-mistakes-jekyll"
+gem "minima", "~> 2.0"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -23,11 +23,9 @@ group :jekyll_plugins do
   gem 'jekyll-archives'
   gem "jekyll-feed"
   gem 'jekyll-include-cache'
-  gem "jekyll-paginate"
   gem 'jekyll-tagging'
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
-  gem 'github-pages'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
