@@ -11,9 +11,6 @@ header:
   overlay_image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"
   overlay_filter: rgba(155, 150, 160, 0.5)
   caption: "Photo credit: [**Kevin Ku on Unsplash**](https://unsplash.com/s/photos/deep-learning)"
-  actions : 
-    - label: "More Info"
-      url: "https://andreadhobby.com/covid19-race-hospitals/"
 --- 
 
 ## COVID19 Dashboard
