@@ -1,8 +1,7 @@
 --- 
 layout: single
 title: "BMI and Lung Cancer Screening Utilization: A Cross-sectional Analysis of 2017 BRFSS"
-author_profile: true
-date: 2021-10-26
+author_profile: false
 comments: true
 show_date: true
 toc: true
@@ -14,7 +13,7 @@ header:
   caption: "Photo credit: [**Kevin Ku on Unsplash**](https://unsplash.com/s/photos/deep-learning)"
   actions : 
     - label: "More Info"
-      url: "https://cyrillemesue.github.io/how-to-learn-machine-learning-and-deep-learning/"
+      url: "https://andreadhobby.com/lung-cancer-screening/"
 --- 
 
 ## BMI and Lung Cancer Screening Utilization: A Cross-sectional Analysis of 2017 BRFSS

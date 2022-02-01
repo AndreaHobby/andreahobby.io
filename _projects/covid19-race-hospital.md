@@ -1,10 +1,9 @@
 --- 
 layout: single
-title: "COVID19 Dashboard"
-author_profile: true
-date: 2021-10-26
-comments: true
-show_date: true
+title: "Covid19 Race Hospitals"
+author_profile: false
+comments: false
+show_date: false
 toc: true
 toc_icon: "cog"
 excerpt: ""

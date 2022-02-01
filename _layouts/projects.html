@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign projects = site.projects %}ghghhg
+{% assign projects = site.projects %}
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
 {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
@@ -46,12 +46,20 @@ layout: default
 				{% include page__taxonomy.html %}
 				{% include page__date.html %}
 			</footer>
+			{% for project in projects %}
+			<div class="list__item">
+				<article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+					<h2 class="archive__item-title no_toc" itemprop="headline">
+						<a href="{{ project.url | relative_url}}" rel="permalink">{{ project.title }}
+						</a>
+					</h2>
+					<p class="archive__item-excerpt" itemprop="description">
+					</p>
+				</article>
+			</div>
+			{% endfor %}
 			{% if page.share %}{% include social-share.html %}{% endif %}
-			{% include post_pagination.html %}
 		</div>
-		{% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
-		{% include comments.html %}
-		{% endif %}
 	</article>
 	{% comment %}
 	<!-- only show related on a post page when `related: true` -->{% endcomment %}
@@ -79,18 +87,4 @@ layout: default
 		</div>
 	</div>
 	{% endif %}
-
-
-{% for project in projects %}gfdgfd
-<div class="list__item">
-	<article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
-		<h2 class="archive__item-title no_toc" itemprop="headline">
-			<a href="/applying-for-coursera-financial-aid/" rel="permalink">How to Apply for Financial Aid for a Coursera Course, Specialization or Professional Certificate
-			</a>
-		</h2>
-		<p class="archive__item-excerpt" itemprop="description">
-		</p>
-	</article>
-</div>
-{% endfor %}
 </div>

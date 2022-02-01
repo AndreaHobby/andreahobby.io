@@ -140,8 +140,6 @@ footer:
 include:
   - .htaccess
   - _pages
-  - _projects
-  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -309,3 +307,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
