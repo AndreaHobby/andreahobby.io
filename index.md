@@ -21,8 +21,8 @@ Andrea Hobby has over ten years of combined experience in clinical research, epi
 
 ## Most Recent Acivities 
 
-- Recently, I particpated in the Health Analytics Career Panel with [BlackTIDES](https://twitter.com/BlackTIDES1) on Twitter Spaces. We had almost 200 attenedees at the event.
-- I launched the Public Health & Data Science Newsletter on [Substack](https://publichealthdatascience.substack.com/). I created this to have a central source of information on how data science methods are being applied to public health. I post the latest research, news, jobs, and events in this field. 
+- Recently, I participated in the Health Analytics Career Panel with [BlackTIDES](https://twitter.com/BlackTIDES1) on Twitter Spaces. We had almost 200 attendees at the event.
+- I launched the Public Health & Data Science Newsletter on [Substack](https://publichealthdatascience.substack.com/). I created this to have a central source of information on how data science methods are applied to public health. I post the latest research, news, jobs, and events in this field. 
 - I was featured with Odane Dunbar on the BlackTIDES podcast. Check it out [here](https://open.spotify.com/episode/0xuL7yHq1H4EU998q9FnEx).
 
 
