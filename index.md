@@ -15,20 +15,16 @@ Hello, a bit about me:
 
 Andrea Hobby has over ten years of combined experience in clinical research, epidemiology, and data science. She builds data visualizations & dashboards, designs research studies, and  builds predictive models in Tableau, R, SAS, and Python.
 
-## My work
 
-##### DATA VISUALIZATION
-COVID-19, Race, and Hospital Beds in United States in Tableau
+## Upcoming Acivities 
+- I will be on the Health Analytic Insights Podcast. I will post the link when I have it. 
 
-##### PUBLICATIONS
-Edwards TC, Patrick DL, Skalicky AM, Huang Y, Hobby AD (2011) Perceived body shape, standardized body-mass index, and weight-specific quality of life of African-American, Caucasian, and Mexican-American adolescents. Qual Life Res.
+## Most Recent Acivities 
 
-Morales, L. S., Flores, Y., Hobby, A., Edwards, T. C., Patrick, D. L., Salmeron, J., & Skalicky, A. M. (2010, October). Weight and Quality of Life of Youth in Mexico and the United States: A Comparative Study. In QUALITY OF LIFE RESEARCH (Vol. 19, pp. 39-39).
+- Recently, I particpated in the Health Analytics Career Panel with [BlackTIDES](https://twitter.com/BlackTIDES1) on Twitter Spaces. We had almost 200 attenedees at the event.
+- I launched the Public Health & Data Science Newsletter on [Substack](https://publichealthdatascience.substack.com/). I created this to have a central source of information on how data science methods are being applied to public health. I post the latest research, news, jobs, and events in this field. 
+- I was featured with Odane Dunbar on the BlackTIDES podcast. Check it out [here](https://open.spotify.com/episode/0xuL7yHq1H4EU998q9FnEx).
 
-##### ADDITIONAL CONTRIBUTIONS
-Feldman AG, Sundaram SS, Beaty BL, Torres R, Curtis DJ, Kempe A. Immunization Status at the Time of Liver Transplant in Children and Adolescents. JAMA. 2019;322(18):1822–1824. doi:10.1001/jAMA.2019.14386
-
-[My Skills](https://github.com/andreahobby)
 
 
 
