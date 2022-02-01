@@ -33,7 +33,7 @@ words_per_minute         : 200
 comments:
   provider               : "utterances"    # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2","utterances" , "custom"
   disqus:
-    shortname            : cyrille-njume
+    shortname            : andrea-hobby
   discourse:
     server               : #https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963   #, e.g.: meta.discourse.org
   facebook:
@@ -98,7 +98,7 @@ author:
   name             : "Andrea Hobby"
   avatar           : "/images/hoyaahobby_edited.webp"
   bio              : "Healthcare Data Scientist"
-  location         : "IWashington DC"
+  location         : "Washington DC"
   email            : "ahobby@publichealthdatascience.com"
   LinkedIn         : "https://www.linkedin.com/in/andreahobby/"
   Github           : "https://github.com/AndreaHobby"
