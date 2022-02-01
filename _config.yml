@@ -33,7 +33,7 @@ words_per_minute         : 200
 comments:
   provider               : "utterances"    # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2","utterances" , "custom"
   disqus:
-    shortname            : cyrille-njume
+    shortname            : andrea-hobby
   discourse:
     server               : #https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963   #, e.g.: meta.discourse.org
   facebook:
@@ -98,65 +98,42 @@ author:
   name             : "Andrea Hobby"
   avatar           : "/images/hoyaahobby_edited.webp"
   bio              : "Healthcare Data Scientist"
-  location         : "Istanbul/Turkey"
-  email            : "adh81@georgetown.edu"
+  location         : "Washington DC"
+  email            : "ahobby@publichealthdatascience.com"
   LinkedIn         : "https://www.linkedin.com/in/andreahobby/"
   Github           : "https://github.com/AndreaHobby"
-  # Facebook         : "https://m.facebook.com/home.php"
-  # Website          : "https://AndreaHobby.github.io/"
   Twitter          : "https://twitter.com/ahobby9"
   
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      # url: "mailto:ahobby@publichealthdatascience.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/cyrille-mesue-njume-3a448a184/"
+      url: "https://www.linkedin.com/in/andreahobby/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AndreaHobby"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://m.facebook.com/home.php"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://AndreaHobby.github.io/"
     - label: "Twitter"
-      # icon: "fab fa-fw fa-twitter-square"
-       #url: "https://twitter.com/home"
-    #- label: "Facebook"
-     # icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    
-    #- label: "Instagram"
-     # icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ahobby9"
+
     #
 # Site Footer
 footer:
   links:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://m.facebook.com/home.php"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AndreaHobby"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.name@email.com"
+      url: "mailto:ahobby@publichealthdatascience.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/cyrille-mesue-njume-3a448a184/"
+      url: "https://www.linkedin.com/in/andreahobby/"
      #- label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
-     #  url: "https://twitter.com/home"
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+     #  url: "https://twitter.com/ahobby9"
 
 
 # Reading Files

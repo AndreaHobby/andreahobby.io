@@ -13,12 +13,9 @@ main:
         url: /project/lung-cancer-screening/
     title: Projects
     url: /projects/
-  -
-    title: Blog
-    url: "https://publichealthdatascience.substack.com"
-  -
-    title: Speaking
-    url: /speaking/
-  -
-    title: Contact
-    url: /contact/
+  - title: "Newsletter"
+    url: https://publichealthdatascience.substack.com
+  - title: "Speaking"
+    url : /speaking/
+  - title: "Contact"
+    url : /contact/
