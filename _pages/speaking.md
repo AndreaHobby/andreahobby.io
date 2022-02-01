@@ -25,10 +25,3 @@ toc_icon: cog
 - "Careers in Data Science", Spelman College, November 2021
 
 
-#![image tooltip here](/images/blkindata.webp)
-
-#![image tooltip here](/images/BASlogo.webp)
-
-#![image tooltip here](/images/dsfsdf.webp)
-
-#![image tooltip here](/images/806f4e_ac20009c72764359a8adaeadeb37917c_mv2.webp)
