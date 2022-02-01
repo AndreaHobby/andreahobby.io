@@ -115,8 +115,8 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AndreaHobby"
     - label: "Twitter"
-      # icon: "fab fa-fw fa-twitter-square"
-       #url: "https://twitter.com/home"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ahobby9"
 
     #
 # Site Footer
