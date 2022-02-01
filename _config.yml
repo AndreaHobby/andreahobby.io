@@ -163,6 +163,8 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _projects
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -309,6 +311,16 @@ defaults:
       comments: true
       share: true
       related: true
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: projects
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
     
 # Build settings
 markdown: kramdown
@@ -319,3 +331,4 @@ plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate

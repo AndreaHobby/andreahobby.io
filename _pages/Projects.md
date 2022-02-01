@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: projects
 title: My Projects
 permalink: /projects/
 author_profile: true
