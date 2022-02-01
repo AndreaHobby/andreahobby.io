@@ -14,7 +14,7 @@ header:
   caption: "Photo credit: [**Kevin Ku on Unsplash**](https://unsplash.com/s/photos/deep-learning)"
   actions : 
     - label: "More Info"
-      url: "https://cyrillemesue.github.io/how-to-learn-machine-learning-and-deep-learning/"
+      url: "https://andreadhobby.com/covid19-race-hospitals/"
 --- 
 
 ## COVID19 Dashboard
