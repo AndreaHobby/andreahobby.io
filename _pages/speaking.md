@@ -18,6 +18,7 @@ toc_icon: cog
 ### Panel Participant
 - A Conversation with Anthony Fauci at Georgetown University, Washington, DC, July 2020
 - The Black America Summit, Bethesda, MD, June 2020 
+
 ### Invited Speaker 
 - “COVID-19, Race, and Hospitals in United States in Tableau”, Black in Data, November 2020
 - “Careers in Data Science”,  Bowie State, December 2020
