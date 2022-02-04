@@ -11,6 +11,7 @@ toc_icon: cog
 #### PROJECT LIST
 
 [BMI and Lung Cancer Screening Utilization: A Cross-sectional Analysis of 2017 BRFSS](https://andreahobby.com/projects/lung-cancer-screening/)
+
 [COVID-19 Dashboard](https://andreahobby.com/projects/covid19-race-hospital/)
 
 ##### DATA VISUALIZATION
