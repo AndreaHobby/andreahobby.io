@@ -1,6 +1,6 @@
 --- 
 layout: single
-title: "Covid19 Race Hospitals"
+title: "COVID-19 Race Hospitals"
 author_profile: false
 comments: false
 show_date: false
@@ -13,7 +13,7 @@ header:
   caption: "Photo credit: [**Kevin Ku on Unsplash**](https://unsplash.com/s/photos/deep-learning)"
 --- 
 
-## COVID19 Dashboard
+## COVID-19 Dashboard
 
 ##### THE PROBLEM
 

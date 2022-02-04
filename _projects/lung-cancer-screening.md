@@ -1,9 +1,9 @@
 --- 
 layout: single
-title: "BMI and Lung Cancer Screening Utilization: A Cross-sectional Analysis of 2017 BRFSS"
+title: "BMI and Lung Cancer Screening Utilization"
 author_profile: false
 comments: true
-show_date: true
+show_date: false
 toc: true
 toc_icon: "cog"
 excerpt: ""

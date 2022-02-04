@@ -8,6 +8,12 @@ toc: true
 toc_icon: cog
 ---
 
+##### PROJECTS
+
+[BMI and Lung Cancer Screening Utilization: A Cross-sectional Analysis of 2017 BRFSS](https://andreahobby.com/projects/lung-cancer-screening/)
+
+[COVID-19 Dashboard](https://andreahobby.com/projects/covid19-race-hospital/)
+
 ##### DATA VISUALIZATION
 COVID-19, Race, and Hospital Beds in United States in Tableau
 
