@@ -1,6 +1,6 @@
 --- 
 layout: single
-title: "Covid19 Race Hospitals"
+title: "COVID-19 Race Hospitals"
 author_profile: false
 comments: false
 show_date: false
