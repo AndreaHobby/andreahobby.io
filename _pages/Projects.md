@@ -8,7 +8,7 @@ toc: true
 toc_icon: cog
 ---
 
-#### PROJECT LIST
+##### PROJECTS
 
 [BMI and Lung Cancer Screening Utilization: A Cross-sectional Analysis of 2017 BRFSS](https://andreahobby.com/projects/lung-cancer-screening/)
 
