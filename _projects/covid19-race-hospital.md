@@ -13,7 +13,7 @@ header:
   caption: "Photo credit: [**Kevin Ku on Unsplash**](https://unsplash.com/s/photos/deep-learning)"
 --- 
 
-## COVID19 Dashboard
+## COVID-19 Dashboard
 
 ##### THE PROBLEM
 
