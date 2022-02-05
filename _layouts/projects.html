@@ -26,12 +26,18 @@ layout: default
 			</header>
 			{% endunless %}
 			<section class="page__content" itemprop="text">
-
-
-				</article>
-			</div>
-			{% endfor %}
-
+				{% for project in projects %}
+				<div class="list__item">
+					<article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+						<h2 class="archive__item-title no_toc" itemprop="headline">
+							<a href="{{ project.url | relative_url}}" rel="permalink">{{ project.title }}
+							</a>
+						</h2>
+						<p class="archive__item-excerpt" itemprop="description">
+						</p>
+					</article>
+				</div>
+				{% endfor %}
 				{% if page.toc %}
 				<aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
 					<nav class="toc">
@@ -52,8 +58,6 @@ layout: default
 				{% include page__taxonomy.html %}
 				{% include page__date.html %}
 			</footer>
-
-
 			{% if page.share %}{% include social-share.html %}{% endif %}
 		</div>
 	</article>
