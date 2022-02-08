@@ -12,10 +12,8 @@ toc_icon: cog
 
 [BMI and Lung Cancer Screening Utilization: A Cross-sectional Analysis of 2017 BRFSS](https://andreahobby.com/projects/lung-cancer-screening/)
 
-[COVID-19 Dashboard](https://andreahobby.com/projects/covid19-race-hospital/)
-
 ##### DATA VISUALIZATION
-COVID-19, Race, and Hospital Beds in United States in Tableau
+[COVID-19, Race, and Hospital Beds in United States in Tableau](https://andreahobby.com/projects/covid19-race-hospital/)
 
 ##### PUBLICATIONS
 Edwards TC, Patrick DL, Skalicky AM, Huang Y, Hobby AD (2011) Perceived body shape, standardized body-mass index, and weight-specific quality of life of African-American, Caucasian, and Mexican-American adolescents. Qual Life Res.
