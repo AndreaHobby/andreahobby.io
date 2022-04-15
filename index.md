@@ -17,7 +17,7 @@ Andrea Hobby has over ten years of combined experience in clinical research, epi
 
 
 ## Upcoming Activities
-- I will be on the Health Analytic Insights Podcast. I will post the link when I have it. 
+- I will give a presentation on bias in healthcare algorithms sometime in June. I will post when I have that information. 
 
 ## Most Recent Activities
 
