@@ -12,6 +12,8 @@ toc_icon: cog
 
 [BMI and Lung Cancer Screening Utilization: A Cross-sectional Analysis of 2017 BRFSS](https://andreahobby.com/projects/lung-cancer-screening/)
 
+[Predicting Chronic Kidney Disease](https://andreahobby.com/projects/ckd/)
+
 ##### DATA VISUALIZATION
 [COVID-19, Race, and Hospital Beds in United States in Tableau](https://andreahobby.com/projects/covid19-race-hospital/)
 
