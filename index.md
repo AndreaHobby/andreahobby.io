@@ -17,7 +17,8 @@ I have over over ten years of combined experience in clinical research, epidemio
 
 
 ## Upcoming Activities
-- Stay tuned. 
+- I will be at CHIL. https://chilconference.org/
+- I am serving as reviewer for an AI and a health informatics conference. 
 
 ## Most Recent Activities
 
