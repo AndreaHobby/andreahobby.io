@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea [Last Name], DrPH Candidate | Algorithmic Bias & Patient Safety Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Academic color palette - sophisticated navy and warm accent */
+            --primary-dark: #1a2332;
+            --primary-navy: #2d3e50;
+            --accent-warm: #c17a5c;
+            --accent-light: #e8d5c4;
+            --text-dark: #1a1a1a;
+            --text-muted: #5a5a5a;
+            --background: #fafaf8;
+            --white: #ffffff;
+            --border-subtle: #e1ddd8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: var(--text-dark);
+            background: var(--background);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3 {
+            font-family: 'Crimson Pro', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        h1 { font-size: 3.5rem; }
+        h2 { font-size: 2.5rem; }
+        h3 { font-size: 1.5rem; }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(250, 250, 248, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-subtle);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        
+        nav.hidden {
+            transform: translateY(-100%);
+        }
+        
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent-warm);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent-warm);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 8rem 2rem 6rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        .hero-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-warm);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+        
+        .hero h1 {
+            margin-bottom: 2rem;
+            color: var(--primary-dark);
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+        
+        .hero-affiliation {
+            font-size: 1rem;
+            color: var(--text-dark);
+            margin-bottom: 3rem;
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--accent-warm);
+            animation: fadeInUp 0.8s ease 0.8s both;
+        }
+        
+        .hero-affiliation strong {
+            font-weight: 600;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            animation: fadeInUp 0.8s ease 1s both;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: var(--primary-dark);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-navy);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(26, 35, 50, 0.15);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-dark);
+            border: 2px solid var(--primary-dark);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-dark);
+            color: var(--white);
+        }
+        
+        /* Research Areas Section */
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            margin-bottom: 4rem;
+            max-width: 700px;
+        }
+        
+        .section-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-warm);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        .section h2 {
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        /* Research Cards */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .research-card {
+            background: var(--white);
+            padding: 3rem 2.5rem;
+            border: 1px solid var(--border-subtle);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .research-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--accent-warm);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+        
+        .research-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+        }
+        
+        .research-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .research-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1.5rem;
+            color: var(--accent-warm);
+        }
+        
+        .research-card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+        
+        .research-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .research-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tag {
+            padding: 0.4rem 1rem;
+            background: var(--accent-light);
+            color: var(--text-dark);
+            font-size: 0.8rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        
+        /* Publications Section */
+        .publications-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+        
+        .publication {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border-subtle);
+            transition: all 0.3s ease;
+        }
+        
+        .publication:last-child {
+            border-bottom: none;
+        }
+        
+        .publication-meta {
+            font-size: 0.85rem;
+            color: var(--accent-warm);
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .publication h3 {
+            color: var(--primary-dark);
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .publication:hover h3 {
+            color: var(--accent-warm);
+        }
+        
+        .publication-authors {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        
+        .publication-venue {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            font-style: italic;
+        }
+        
+        /* About Section with Two Column */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 5rem;
+            align-items: start;
+        }
+        
+        .about-image-container {
+            position: relative;
+        }
+        
+        .about-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: var(--accent-light);
+            position: relative;
+        }
+        
+        .about-image::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 2px solid var(--accent-warm);
+            z-index: -1;
+        }
+        
+        .about-text h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-dark);
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+        
+        .credentials {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+        
+        .credentials h4 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        
+        .credentials ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        
+        .credentials li {
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-muted);
+        }
+        
+        .credentials li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-warm);
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 6rem 2rem;
+        }
+        
+        .contact-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 5rem;
+        }
+        
+        .contact-info h2 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .contact-item-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-warm);
+        }
+        
+        .contact-item a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-item a:hover {
+            color: var(--accent-warm);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-navy);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            
+            .nav-links {
+                gap: 1.5rem;
+            }
+            
+            .hero {
+                padding: 5rem 2rem 4rem;
+            }
+            
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+            }
+            
+            .btn {
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+            
+            h1 { font-size: 2rem; }
+            
+            .section {
+                padding: 4rem 1.5rem;
+            }
+        }
+        
+        /* Pivot-ready elements (hidden in academic mode, shown in consulting mode) */
+        .consulting-only {
+            display: none; /* Remove this class when pivoting to consulting */
+        }
+        
+        .academic-only {
+            display: block; /* Change to 'none' when pivoting to consulting */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="logo">Andrea [Last Name]</a>
+            <ul class="nav-links">
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="consulting-only"><a href="#services">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-label">DrPH Candidate | Health Informatics Researcher</div>
+            <h1>Advancing Patient Safety Through Algorithmic Governance</h1>
+            <p class="hero-subtitle">
+                <span class="academic-only">Investigating bias mitigation frameworks in population health predictive models and diagnostic algorithms.</span>
+                <span class="consulting-only">Helping healthcare organizations implement evidence-based frameworks for algorithmic bias detection, mitigation, and governance.</span>
+            </p>
+            <div class="hero-affiliation">
+                <strong>Johns Hopkins Bloomberg School of Public Health</strong><br>
+                Doctor of Public Health (DrPH) Candidate<br>
+                Director of Data Science, Association for Diagnostics & Laboratory Medicine
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary academic-only">Research Collaboration</a>
+                <a href="#services" class="btn btn-primary consulting-only">Work Together</a>
+                <a href="#publications" class="btn btn-secondary">View Publications</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Areas -->
+    <section class="section" id="research">
+        <div class="section-header">
+            <div class="section-label">Research Focus</div>
+            <h2 class="academic-only">Primary Research Areas</h2>
+            <h2 class="consulting-only">Areas of Expertise</h2>
+            <p class="section-description">
+                <span class="academic-only">My doctoral research investigates the intersection of algorithmic bias, patient safety, and health equity in diagnostic and population health settings.</span>
+                <span class="consulting-only">Evidence-based expertise in algorithmic governance, bias mitigation, and patient safety frameworks for healthcare organizations.</span>
+            </p>
+        </div>
+
+        <div class="research-grid">
+            <div class="research-card">
+                <svg class="research-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+                <h3>Algorithmic Bias Mitigation</h3>
+                <p>
+                    <span class="academic-only">Developing and validating frameworks for detecting and mitigating bias in clinical decision support systems and population health predictive models.</span>
+                    <span class="consulting-only">Implementing bias detection frameworks and audit methodologies for clinical algorithms, diagnostic systems, and population health models.</span>
+                </p>
+                <div class="research-tags">
+                    <span class="tag">Fairness Metrics</span>
+                    <span class="tag">Clinical Algorithms</span>
+                    <span class="tag">Model Auditing</span>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <svg class="research-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+                <h3>AI Governance & Policy</h3>
+                <p>
+                    <span class="academic-only">Contributing to federal AI strategy development and examining organizational governance structures for responsible AI deployment in healthcare settings.</span>
+                    <span class="consulting-only">Governance framework design and policy implementation for responsible AI deployment, aligned with emerging federal requirements and industry best practices.</span>
+                </p>
+                <div class="research-tags">
+                    <span class="tag">HHS AI Strategy</span>
+                    <span class="tag">Governance Frameworks</span>
+                    <span class="tag">Policy Development</span>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <svg class="research-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                </svg>
+                <h3>Patient Safety & Quality</h3>
+                <p>
+                    <span class="academic-only">Investigating the patient safety implications of algorithmic errors and bias, with focus on diagnostic excellence and equitable health outcomes.</span>
+                    <span class="consulting-only">Patient safety risk assessment for AI-enabled diagnostic systems, including error detection protocols and quality assurance frameworks.</span>
+                </p>
+                <div class="research-tags">
+                    <span class="tag">Diagnostic Safety</span>
+                    <span class="tag">Quality Metrics</span>
+                    <span class="tag">Health Equity</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="section" id="publications" style="background: var(--white);">
+        <div class="section-header">
+            <div class="section-label">Selected Work</div>
+            <h2>Publications & Contributions</h2>
+            <p class="section-description">
+                Peer-reviewed research and policy contributions advancing algorithmic fairness and patient safety in healthcare AI systems.
+            </p>
+        </div>
+
+        <div class="publications-list">
+            <div class="publication">
+                <div class="publication-meta">Journal of the American Medical Informatics Association • 2024</div>
+                <h3>Algorithmic Bias in Population Health Predictive Models: A Framework for Detection and Mitigation</h3>
+                <p class="publication-authors"><strong>[Your Name]</strong>, [Co-authors]</p>
+                <p class="publication-venue">JAMIA, Vol. XX, Issue X</p>
+            </div>
+
+            <div class="publication">
+                <div class="publication-meta">HHS AI Strategy Contribution • 2024</div>
+                <h3>Patient Safety Considerations for AI-Enabled Diagnostic Systems</h3>
+                <p class="publication-authors"><strong>[Your Name]</strong></p>
+                <p class="publication-venue">Department of Health and Human Services AI Strategy Working Group</p>
+            </div>
+
+            <div class="publication">
+                <div class="publication-meta">Health Innovation Substack • Ongoing</div>
+                <h3>Health Innovation: AI Governance, Algorithmic Bias, and Patient Safety</h3>
+                <p class="publication-authors"><strong>[Your Name]</strong></p>
+                <p class="publication-venue">Independent newsletter examining emerging trends in healthcare AI governance</p>
+            </div>
+
+            <div class="publication academic-only">
+                <div class="publication-meta">Conference Presentation • 2024</div>
+                <h3>Equity-Centered Approaches to Clinical Algorithm Validation</h3>
+                <p class="publication-authors"><strong>[Your Name]</strong>, [Co-authors]</p>
+                <p class="publication-venue">[Relevant Conference Name]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (consulting-only) -->
+    <section class="section consulting-only" id="services">
+        <div class="section-header">
+            <div class="section-label">Services</div>
+            <h2>Algorithmic Governance Consulting</h2>
+            <p class="section-description">
+                Evidence-based consulting services for healthcare organizations implementing responsible AI systems.
+            </p>
+        </div>
+
+        <div class="research-grid">
+            <div class="research-card">
+                <h3>Governance Framework Design</h3>
+                <p>Develop customized governance structures for algorithmic oversight, including committee formation, review processes, and accountability mechanisms aligned with organizational goals and regulatory requirements.</p>
+            </div>
+
+            <div class="research-card">
+                <h3>Bias Detection & Auditing</h3>
+                <p>Implement systematic bias audit methodologies for clinical algorithms, including fairness metric selection, validation protocols, and remediation planning for identified disparities.</p>
+            </div>
+
+            <div class="research-card">
+                <h3>Policy & Compliance Strategy</h3>
+                <p>Navigate evolving AI regulations and develop internal policies that ensure compliance while enabling innovation in patient care and population health management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about" style="background: var(--white);">
+        <div class="about-content">
+            <div class="about-image-container">
+                <div class="about-image">
+                    <!-- Replace with actual professional photo -->
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                        [Professional Photo]
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-text">
+                <div class="section-label">Background</div>
+                <h2>About</h2>
+                <p>
+                    I am a DrPH candidate at Johns Hopkins Bloomberg School of Public Health, where my research focuses on algorithmic bias mitigation in population health predictive models and diagnostic algorithms. My work sits at the intersection of health informatics, patient safety, and health equity.
+                </p>
+                <p>
+                    As Director of Data Science at the Association for Diagnostics & Laboratory Medicine (ADLM), I lead initiatives advancing data-driven approaches to laboratory medicine and diagnostic excellence. Previously, I contributed to federal AI strategy development through the HHS AI Strategy Working Group and held positions at HRSA and Accenture Federal Services.
+                </p>
+                <p class="academic-only">
+                    Through my research and newsletter, Health Innovation, I examine emerging challenges in healthcare AI governance, working toward frameworks that ensure algorithmic systems serve all patients equitably and safely.
+                </p>
+                <p class="consulting-only">
+                    I translate academic research into practical frameworks for healthcare organizations navigating the complexities of AI implementation, governance, and bias mitigation. My approach combines rigorous evidence with real-world applicability.
+                </p>
+
+                <div class="credentials">
+                    <h4>Education & Affiliations</h4>
+                    <ul>
+                        <li>DrPH Candidate, Johns Hopkins Bloomberg School of Public Health (Expected 2028)</li>
+                        <li>Director of Data Science, Association for Diagnostics & Laboratory Medicine</li>
+                        <li>Contributor, HHS AI Strategy Working Group</li>
+                        <li>Published in Journal of the American Medical Informatics Association (JAMIA)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2 class="academic-only">Research Collaboration</h2>
+                <h2 class="consulting-only">Let's Work Together</h2>
+                <p class="academic-only">
+                    I welcome opportunities for research collaboration, speaking engagements, and discussions on algorithmic bias, patient safety, and AI governance in healthcare settings.
+                </p>
+                <p class="consulting-only">
+                    Ready to implement evidence-based algorithmic governance frameworks? Let's discuss how we can work together to ensure your AI systems are fair, safe, and compliant.
+                </p>
+            </div>
+
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <div class="contact-item-icon">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <a href="/cdn-cgi/l/email-protection#462529283227253206233e272b362a236825292b"><span class="__cf_email__" data-cfemail="d6b5b9b8a2b7b5a296afb9a3a4b2b9bbb7bfb8f8b5b9bb">[email&#160;protected]</span></a>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </div>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-icon">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                        </svg>
+                    </div>
+                    <a href="https://yoursubstack.substack.com" target="_blank">Health Innovation Newsletter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Andrea [Last Name]. All rights reserved.</p>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Hide/show navigation on scroll
+        let lastScroll = 0;
+        const nav = document.querySelector('nav');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                nav.classList.add('hidden');
+            } else {
+                nav.classList.remove('hidden');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.research-card, .publication').forEach(el
